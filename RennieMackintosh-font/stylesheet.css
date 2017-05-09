@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'RennieMackintoshITCBold';
+	src: url('rennie_mackintosh_itc_bold.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'RennieMackintoshITCLight';
+	src: url('rennie_mackintosh_itc_light.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
