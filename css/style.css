@@ -573,10 +573,38 @@
             list-style-type: none;
         }
 
-        #pubs ul li
-        {
-            padding-bottom: 1em;
-        }
+   	 #pubs ul li
+    	{
+        padding-bottom: 1em;
+	    }
+
+/*********************************************************************************/
+/* Research directions
+/*********************************************************************************/
+
+	#research
+	{
+	    padding-bottom: 2em;
+        background: #f2f2f2;
+        position: relative;
+        text-align: center;
+	}
+
+    #research h3
+    {
+        display: block;
+        font-weight: 300;
+    }
+
+    #research .pennant
+    {
+        font-size: 4em;
+    }
+
+    #research .button
+    {
+        margin-top: 1.5em;
+    }
 
 /*********************************************************************************/
 /* Research directions
