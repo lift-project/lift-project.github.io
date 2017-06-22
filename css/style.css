@@ -106,8 +106,13 @@
         padding: 1em 0 1em 2em;
         font-style: italic;
     }
-    
+
     p, ul, ol, dl, table
+    {
+        margin-bottom: 0;
+    }
+    
+    .homepage p, ul, ol, dl, table
     {
         margin-bottom: 1em;
     }
@@ -125,8 +130,8 @@
         header .byline
         {
             display: block;
-            margin: 1.5em 0 0 0;
-            padding: 0 0 0.5em 0;
+            margin: 0;
+            padding: 0;
         }
         
     footer
@@ -149,7 +154,7 @@
         section,
         article
         {
-            margin-bottom: 3em;
+            margin-bottom: 2em;
         }
         
         section > :last-child,
@@ -189,12 +194,17 @@
                 width: 100%;
                 margin: 0 0 2em 0;
             }
-            
+
             .image.full
             {
                 display: block;
                 width: 100%;
                 margin-bottom: 2em;
+            }
+            
+            .profile .image
+            {
+                margin-bottom: 0.7em;
             }
             
             .image.left
@@ -354,7 +364,7 @@
 /* Header                                                                        */
 /*********************************************************************************/
 
-    #header
+    #header, .dropdown-blur
     {
         position: relative;
         /*https://commons.wikimedia.org/wiki/File:Sky_August_2010-1a.jpg*/
@@ -476,8 +486,33 @@
             {
                 display: none;
             }*/
+    .dropdown-blur, .dropdown-bg {
+        display: block;
+        position: absolute;
+        content: ' ';
+        width: 100%;
+        height: 100%;    
+    }
+    .dropdown-blur {
+        z-index: -2;
+        top: -10px;
+        left: -10px;
+        margin: 10px 0 0 10px;
+        -webkit-filter: url('#blur');
+        filter: url('#blur');
+        -webkit-filter: blur(5px);
+        filter: blur(5px);
+        opacity: 0.9;    
+    }
+    .dropdown-bg {
+        z-index: -1;
+        top: 0px;
+        left: 0px;
+        background: rgba(0, 0, 0, .2) !important;
+    }
     .dropdown-menu {
-        background: rgba(0,0,0,.2) !important;
+        background: transparent !important;
+        position: relative;
         border-radius: 0 !important;
         border: 0 !important;
         width: 100%;
@@ -495,15 +530,8 @@
         text-align: center !important;
         text-transform: uppercase !important;
     }
-    .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-        background: rgba(0,0,0,.1) !important;
-    }
-    .blur {
-        -webkit-filter: blur(1px);
-        -moz-filter: blur(1px);
-        -o-filter: blur(1px);
-        -ms-filter: blur(1px);
-        filter: blur(1px);
+    .dropdown-menu> li > a:focus, .dropdown-menu>li>a:hover {
+        background: rgba(0,0,0,.05) !important;
     }
     
 /*********************************************************************************/
@@ -527,8 +555,16 @@
 
     #sidebar h2
     {
-        display: block;
-        padding-bottom: 0.50em;
+        display: block;        
+    }
+    #sidebar > .profile {
+        text-align: center;
+    }
+    #sidebar > .profile > header {
+        text-align: left;
+    }
+    #sidebar > .profile > div {
+        margin: auto;
     }
 
 /*********************************************************************************/

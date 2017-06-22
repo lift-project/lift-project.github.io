@@ -1,16 +1,4 @@
-<!--
-<div id="nav-wrapper">
-    <nav id="nav">
-        <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#code">Source Code</a></li>
-            <li><a href="#pubs">Publications</a></li>
-            <li><a href="#research">Research directions</a></li>
-            <li><a href="#team">Team</a></li>
-        </ul>
-    </nav>
-</div>
--->
+
 <div id="nav-wrapper">
     <nav id="nav">
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -19,15 +7,24 @@
                 <!--<li class="active">--><li><a href="index.html#code">Source Code</a></li>
                 <li><a href="index.html#pubs">Publications</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" 
-                       aria-expanded="false">Reseach directions <span class="caret"></span></a>
+                    <a href="index.html#research">Reseach directions <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="ml.html">Machine Learning</a></li>
                         <!--<li role="separator" class="divider"></li>
                         <li><a href="#">Separated link</a></li>-->
+                        <div class="dropdown-blur"></div>
+                        <div class="dropdown-bg"></div>
                     </ul>
                 </li>
                 <li><a href="index.html#team">Team</a></li>
             </ul>
     </nav>
 </div>
+<!-- Open menu on hover -->
+<script language="JavaScript">
+    $('ul.nav li.dropdown').hover(function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeIn(500);
+    }, function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+    });
+</script>
