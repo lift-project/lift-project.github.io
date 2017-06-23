@@ -1,153 +1,111 @@
-<!DOCTYPE HTML>
-<!--
-	Linear by TEMPLATED
-    templated.co @templatedco
-    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<html>
-	<head>
-		<title>Lift: Machine Learning</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
-        <link href='RennieMackintosh-font/stylesheet.css' rel='stylesheet'>
+---
+title: Machine Learning
+subtitle: Lift as a cross-platfom ML engine
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-panels.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel-noscript.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
-		</noscript>
-	</head>
-	<body>
+layout: project_page
+---
+<div id="main">
+    <div class="container">
+        <div class="row">
 
-	<!-- Header -->
-		<div id="header">
-			<div id="nav-wrapper">
-				<!-- Nav -->
-				<nav id="nav">
-                    <ul>
-					  <li><a href="index.html">Home</a></li>
-					  <li><a href="index.html#code">Source Code</a></li>
-					  <li><a href="index.html#pubs">Publications</a></li>
-					  <li class="active"><a href="index.html#research">Research directions</a></li>
-					  <li><a href="index.html#team">Team</a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="container">
+            <!-- Content -->
+            <div id="content" class="8u skel-cell-important">
+                <section>
+                    <header>
+                        <span class="byline">Abstract</span>
+                    </header>
+                    <p>Performance-portable code is hard to produce due to diversity and
+                        heterogeneity of the state-of-the-art hardware platforms. Even more
+                        complex is the task of optimizing Artificial Neural Networks (ANNs)
+                        towards multiple hardware platforms. Manual optimization is expensive,
+                        while modern automated tools either support a narrow set of platforms or
+                        do not exploit individual strengths of different platforms to the fullest.</p>
 
-				<!-- Logo -->
-				<div id="logo">
-					<h1><a href="#">Machine Learning</a></h1>
-					<span class="tag">Lift as a cross-platfom ML engine</span>
-				</div>
-			</div>
-		</div>
-	<!-- Header -->
+                    <p>The functional data-parallel language <span class="lift-bold">Lift</span> was shown to be performance-portable;
+                        the performance of the compiled OpenCL code is on par or better than that of highly
+                        tuned platform-specific libraries. This project aims to extend the method to the
+                        domain of Artificial Neural Networks by integrating domain-specific optimisations
+                        into the rewrite rules-based <span class="lift-bold">Lift</span> compiler.</p>
+                </section>
+                <div class="row">
+                    <header>
+                        <span class="byline">Optimizational methods of interest</span>
+                    </header>
+                    <div class="6u">
+                        <ul>
+                            <li>Parallel mappings space exploration</li>
+                            <li>Memory tiling</li>
+                            <li>Memory coalescing</li>
+                            <li>Approximate computations</li>
+                            <li>Float quantization</li>
+                            <li>Neuron pruning</li>
+                            <li>Training batch size autotuning</li>
+                        </ul>
+                    </div>
+                    <div class="6u">
+                        <ul>
+                            <li>Varying precision across layers and neurons</li>
+                            <li>Convolution kernel decomposition</li>
+                            <li>Sharing 32-bit registers</li>
+                            <li>OpenCL kernel fusion</li>
+                            <li>Expression simplification</li>
+                            <li>Proprietary instruction sets usage</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-	<!-- Main -->
-		<div id="main">
-			<div class="container">
-				<div class="row">
-
-					<!-- Content -->
-					<div id="content" class="8u skel-cell-important">
-						<section>
-							<header>
-								<span class="byline">Abstract</span>
-							</header>
-							<p>Performance-portable code is hard to produce due to diversity and
-                                heterogeneity of the state-of-the-art hardware platforms. Even more
-                                complex is the task of optimizing Artificial Neural Networks (ANNs)
-                                towards multiple hardware platforms. Manual optimization is expensive,
-                                while modern automated tools either support a narrow set of platforms or
-                                do not exploit individual strengths of different platforms to the fullest.</p>
-
-                            <p>The functional data-parallel language Lift was shown to be performance-portable;
-                                the performance of the compiled OpenCL code is on par or better than that of highly
-                                tuned platform-specific libraries. This project aims to extend the method to the
-                                domain of Artificial Neural Networks by integrating domain-specific optimisations
-                                into the rewrite rules-based Lift compiler.</p>
-						</section>
-                        <div class="row">
-							<header>
-								<span class="byline">Optimizational methods of interest</span>
-							</header>
-                            <section class="6u">
-                                <ul>
-                                    <li>Parallel mappings space exploration</li>
-                                    <li>Memory tiling</li>
-                                    <li>Memory coalescing</li>
-                                    <li>Approximate computations</li>
-                                    <li>Float quantization</li>
-                                    <li>Neuron pruning</li>
-                                    <li>Training batch size autotuning</li>
-                                </ul>
-                            </section>
-                            <section class="6u">
-                                <ul>
-                                    <li>Varying precision across layers and neurons</li>
-                                    <li>Convolution kernel decomposition</li>
-                                    <li>Sharing 32-bit registers</li>
-                                    <li>OpenCL kernel fusion</li>
-                                    <li>Expression simplification</li>
-                                    <li>Proprietary instruction sets usage</li>
-                                </ul>
-                            </section>
-                        </div>
-					</div>
-
-					<!-- Sidebar -->
-					<div id="sidebar" class="4u">
-						<section>
-							<header>
-								<h2>Talks</h2>
-							</header>
-							<div class="row">
-								<section>
-                                    <ul class="style">
-                                        <li>
-                                            <p class="posted">June 14, 2017 @ the PPar Student Showcase Event</p>
-                                            <p><a href="presentations/2017/MogersPPar2017.pdf">Optimization of neural computations using a functional data-parallel language</a></p>
-                                        </li>
-                                    </ul>
-								</section>
-							</div>
-						</section>
-						<section>
-							<header>
-								<h2>Posters</h2>
-							</header>
-							<ul class="style">
+            <!-- Sidebar -->
+            <div id="sidebar" class="4u">
+                <section class="profile">
+                    <header>
+                        <h2>Researcher</h2>
+                    </header>
+                    <div class="6u">
+                        <a href="https://naumsmogers.me/" class="image full">
+                            <img src="images/naums.jpg" alt=""></a>                        
+                        <a href="https://naumsmogers.me/">Naums Mogers</a>
+                        <br>
+                        PhD Student
+                        <br>
+                        <a href="http://www.ed.ac.uk/informatics/">University of Edinburgh</a>
+                    </div>
+                </section>
+                <section>
+                    <header>
+                        <h2>Talks</h2>
+                    </header>
+                    <div class="row">
+                        <section>
+                            <ul class="style">
                                 <li>
                                     <p class="posted">June 14, 2017 @ the PPar Student Showcase Event</p>
-                                    <p><a href="posters/2017/MogersPPar2017Poster.png">Optimization of neural computations using a functional data-parallel language</a></p>
+                                    <p><a href="presentations/2017/MogersPPar2017.pdf">
+                                        Optimization of neural computations using a functional data-parallel language</a></p>
                                 </li>
-                                    <li>
-                                        <p class="posted">November 10, 2016 @ the PPar IEE</p>
-                                        <p><a href="posters/2016/MogersPParIEE2016Poster.pdf">Optimization of neural computations using a functional data-parallel language</a></p>
-                                    </li>
-							</ul>
-						</section>
-					</div>
+                            </ul>
+                        </section>
+                    </div>
+                </section>
+                <section>
+                    <header>
+                        <h2>Posters</h2>
+                    </header>
+                    <ul class="style">
+                        <li>
+                            <p class="posted">June 14, 2017 @ the PPar Student Showcase Event</p>
+                            <p><a href="posters/2017/MogersPPar2017Poster.png">
+                                Optimization of neural computations using a functional data-parallel language</a></p>
+                        </li>
+                            <li>
+                                <p class="posted">November 10, 2016 @ the PPar IEE</p>
+                                <p><a href="posters/2016/MogersPParIEE2016Poster.pdf">
+                                    Optimization of neural computations using a functional data-parallel language</a></p>
+                            </li>
+                    </ul>
+                </section>
+            </div>
 
-				</div>
-			</div>
-		</div>
-	<!-- /Main -->
-
-	<!-- Copyright -->
-		<div id="copyright">
-			<div class="container">
-				Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
-			</div>
-		</div>
-
-
-	</body>
-</html>
+        </div>
+    </div>
+</div>

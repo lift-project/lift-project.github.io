@@ -1,0 +1,30 @@
+
+<div id="nav-wrapper">
+    <nav id="nav">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <!--<li class="active">--><li><a href="index.html#code">Source Code</a></li>
+                <li><a href="index.html#pubs">Publications</a></li>
+                <li class="dropdown">
+                    <a href="index.html#research">Reseach directions <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ml.html">Machine Learning</a></li>
+                        <!--<li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>-->
+                        <div class="dropdown-blur"></div>
+                        <div class="dropdown-bg"></div>
+                    </ul>
+                </li>
+                <li><a href="index.html#team">Team</a></li>
+            </ul>
+    </nav>
+</div>
+<!-- Open menu on hover -->
+<script language="JavaScript">
+    $('ul.nav li.dropdown').hover(function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeIn(500);
+    }, function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+    });
+</script>

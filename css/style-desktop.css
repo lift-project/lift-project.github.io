@@ -116,7 +116,7 @@
 
 	#research
 	{
-		padding: 6em 0em;
+		padding: 0 0 2em 0;
 	}
 
 	#research h3
@@ -132,7 +132,7 @@
 
 	#research p
 	{
-		line-height: 2em;
+		line-height: 1.8em;
 		font-size: 1.2em;
 	}
 
