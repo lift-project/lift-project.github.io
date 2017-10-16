@@ -299,6 +299,10 @@
             padding-top: 0px;
             border-top: none;
         }
+        
+        li > p {
+            text-indent: 0;
+        }
                             
 
     /* Buttons */
