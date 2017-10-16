@@ -181,7 +181,7 @@
         }
         
         .row {
-            margin-bottom: 25px;
+            margin-bottom: 55px;
         }
         section header h2
         {
@@ -559,7 +559,7 @@
         position: relative;
         border-radius: 0 !important;
         border: 0 !important;
-        width: 100%;
+        width: auto;
         padding: 0 !important;
     }
     .dropdown-menu > li {
@@ -824,3 +824,7 @@
             font-weight: 300;
             color: rgba(255,255,255,.6);
         }	
+
+        div .row+.row>* {
+            padding-top: 10px;
+        }
