@@ -1,0 +1,107 @@
+---
+title: Sparse Data Parallelism
+subtitle: Matrix Multiplication Beyond Auto-Tuning — Rewrite Based GPU Code Generation
+
+layout: project_page
+---
+<div id="main">
+    <div class="container">
+        <div class="row">
+
+            <!-- Content -->
+            <div id="content" class="8u skel-cell-important">
+                <section>
+                    <header>
+                        <h2>Abstract</h2>
+                    </header>
+                    <p>While contemporary GPU architectures are heavily biased towards
+                        the execution of predictably regular data parallelism, many real
+                        application domains are based around data structures which are
+                        naturally sparse and irregular. We demonstrate that
+                        high level programming and high performance GPU execution for
+                        sparse, irregular problems are not mutually exclusive. Our insight
+                        is that this can be achieved by capturing sparsity and irregularity
+                        friendly implementations within the target space of a pattern-oriented,
+                        high-level compilation and transformation system. By
+                        working in a language rather than a library, we benefit from the
+                        ability to generate implementations by program-specific composition
+                        of building blocks which capture detailed, low-level implementation
+                        choices. Using sparse matrix-vector multiplication as a
+                        case study, we show that the resulting system produces implementations
+                        for which the performance is competitive with, and sometimes
+                        outperforms that obtained with leading ad-hoc approaches.
+                        We show that there are correlations between good implementation
+                        choices and simple measurable properties of the irregularity present
+                        in problem instances. These can be used to design heuristics which
+                        navigate the implementation space effectively.</p>
+                    
+                    <p>
+                        In a case study, we implement a number of versions of sparse
+                        matrix-vector multiplication, and achieve promising preliminary
+                        performance results. On very regular sparse matrices we are able
+                        to achieve up to 1.8x the performance of the state-of-the-art sparse
+                        matrix-vector implementation from the clSPARSE library, and up to
+                        0.7x the performance on very irregular applications.</p>
+                    
+                </section>
+                
+                <section>
+                    <header>
+                        <h2>Publications</h2>
+                    </header>
+                    <ul>
+                        <li>
+                            Adam Harries, Michel Steuwer, Murray Cole, Alan Gray, and Christophe Dubach:
+                            <strong><a href="publications/2016/harries16sparse.pdf">
+                                Compositional Compilation for Sparse, Irregular Data Parallelism</a></strong>, 
+                            in <i><a href="https://sites.google.com/site/hlpgpu2016/" target="blank">
+                            the Workshop on High-Level Programming for Heterogeneous and Hierarchical Parallel 
+                            Systems</a></i> (HLPGPU) @ HiPEAC.
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Sidebar -->
+            <div id="sidebar" class="4u">
+                <section class="profile">
+                    <header>
+                        <h2>Researchers</h2>
+                    </header>
+                    <div class="row">
+                        <section class="6u">
+                            <a href="http://homepages.inf.ed.ac.uk/s1467120/" class="image full">
+                                <img src="images/adam.jpg" alt="Adam Harries"></a>
+                            <a href="http://homepages.inf.ed.ac.uk/s1467120/">Adam Harries</a>
+                            <br>
+                            PhD Student
+                            <br>
+                            <a href="http://www.ed.ac.uk/informatics/">University of Edinburgh</a>
+                        </section>
+                        <section class="6u">
+                            <a href="https://michel-steuwer.github.io/" class="image full">
+                                <img src="images/msteuwer.jpg" alt="Michel Steuwer"></a>
+                            <a href="https://michel-steuwer.github.io/">Michel Steuwer</a>
+                            <br>
+                            Supervisor
+                            <br>
+                            <a href="http://www.ed.ac.uk/informatics/">University of Edinburgh</a>
+                        </section>
+                    </div>
+                    <div class="row">
+                        <section class="6u">
+                            <a href="http://homepages.inf.ed.ac.uk/cdubach/" class="image full">
+                                <img src="images/cdubach.png" alt="Christophe Dubach"></a>
+                            <a href="http://homepages.inf.ed.ac.uk/cdubach/">Christophe Dubach</a>
+                            <br>
+                            Supervisor
+                            <br>
+                            <a href="http://www.ed.ac.uk/informatics/">University of Edinburgh</a>
+                        </section>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+</div>
