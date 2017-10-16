@@ -179,9 +179,13 @@
         {
             margin-bottom: 0;
         }
-        
+
         .row {
-            margin-bottom: 55px;
+            margin-bottom: 85px;
+        }
+        
+        .row:last-child {
+            margin-bottom: 25px;
         }
         section header h2
         {
@@ -828,3 +832,24 @@
         div .row+.row>* {
             padding-top: 10px;
         }
+
+/*********************************************************************************/
+/* Research directions                                                           */
+/*********************************************************************************/
+#content > .row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+#content > .row > .\34u {
+    position: relative;
+    padding-bottom: 55px !important;
+}
+#content > .row > .\34u > .button_wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-right: 50px;
+}
