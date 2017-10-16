@@ -281,28 +281,84 @@ Improving Programmability and Performance Portability
         </header>
           <div class="row">
               <section class="4u">
-                  <span class="pennant"><a href="#"><span class="fa fa-cubes"></span></a></span>
-                  <h3>Heterogeneous Programming</h3>
-		  <p>Using <span class="lift-bold">Lift</span> to create a high-level programming environment for Heterogeneous Computation, freeing the programmer from the burden of having to write complex device-specific code. This makes it possible to automatically identify parallelism in non-associative reductions, hence enabling generation of efficient parallel implementations for GPUs. 
-		  <!--<a href="YOUR_PROJECT_PAGE.html" class="button button-style1">Read More</a> -->
+                  <span class="pennant"><a href="YOUR_PROJECT_PAGE.html"><span class="fa fa-clone"></span></a></span>
+                  <h3>Matrix Multiplication</h3>
+                  <p>Starting from a single high-level program, our compiler automatically generates highly optimized 
+                      and specialized matrix multiplication implementations. 
+                      We group simple rewrite rules into more complex macro-rules, each describing a well-known optimization
+                      like tiling and register blocking in a composable way. Using
+                      an exploration strategy our compiler automatically generates
+                      50,000 OpenCL kernels, each providing a differently
+                      optimized — but provably correct — implementation of matrix
+                      multiplication.</p>
+                  <!--<a href="YOUR_PROJECT_PAGE.html" class="button button-style1">Read More</a>-->
               </section>
               <section class="4u">
                   <span class="pennant"><a href="ml.html"><span class="fa fa-connectdevelop"></span></a></span>
                   <h3>Machine Learning</h3>
-                  <p>Making neural networks (NNs) performance-portable using <span class="lift-bold">Lift</span>: implementing generic and NN-specific optimizations as rewrite rules for efficient hardware utilization;
-                      introducing traditional NN building blocks such as <i>conv</i>, <i>norm</i> and <i>fully_connected</i> for seamless integration of <span class="lift-bold">Lift</span> with popular machine learning libraries.</p>
+                  <p>Making neural networks (NNs) performance-portable using <span class="lift-bold">Lift</span>: 
+                      implementing generic and NN-specific optimizations as rewrite rules for efficient hardware utilization;
+                      introducing traditional NN building blocks such as <i>conv</i>, <i>norm</i> and <i>fully_connected</i> 
+                      for seamless integration of <span class="lift-bold">Lift</span> with popular machine learning libraries.</p>
                   <a href="ml.html" class="button button-style1">Read More</a>
               </section>
               <section class="4u">
-                  <!--
-                  NOTE: find your icon here: http://fontawesome.io/icons/
-                  <span class="pennant"><a href="YOUR_PROJECT_PAGE.html"><span class="fa YOUR_ICON_CODE"></span></a></span>
-                  <h3>YOUR_PROJECT_TITLE_SHORT</h3>
-                  <p>YOUR_PROJECT_DESCRIPTION</p>
-                  <a href="YOUR_PROJECT_PAGE.html" class="button button-style1">Read More</a>
-                  NOTE: remove "&nbsp;" below
-                  -->
-                  &nbsp;
+                  <span class="pennant"><a href="#"><span class="fa fa-cubes"></span></a></span>
+                  <h3>Heterogeneous Programming</h3>
+                  <p>Using <span class="lift-bold">Lift</span> to create a high-level programming environment for 
+                      Heterogeneous Computation, freeing the programmer from the burden of having to write complex 
+                      device-specific code. This makes it possible to automatically identify parallelism in 
+                      non-associative reductions, hence enabling generation of efficient parallel implementations for GPUs.
+                      <!--<a href="YOUR_PROJECT_PAGE.html" class="button button-style1">Read More</a> -->
+              </section>
+          </div>
+          
+          <div class="row">
+              <section class="4u">
+                  <span class="pennant"><a href="YOUR_PROJECT_PAGE.html"><span class="fa fa-barcode"></span></a></span>
+                  <h3>Sparse Data Parallelism</h3>
+                  <p>We demonstrate that
+                      high level programming and high performance GPU execution for
+                      sparse, irregular problems are not mutually exclusive. Our insight
+                      is that this can be achieved by capturing sparsity and irregularity
+                      friendly implementations within the target space of a pattern-oriented,
+                      high-level compilation and transformation system. By
+                      working in a language rather than a library, we benefit from the
+                      ability to generate implementations by program-specific composition
+                      of building blocks which capture detailed, low-level implementation
+                      choices.</p>
+                  <!--<a href="YOUR_PROJECT_PAGE.html" class="button button-style1">Read More</a>-->
+              </section>
+              <section class="4u">
+                  <span class="pennant"><a href="YOUR_PROJECT_PAGE.html"><span class="fa fa-rss"></span></a></span>
+                  <h3>3D Wave Modelling</h3>
+                  <p>Simplified room acoustics simulations have been thoroughly investigated in
+                      <span class="lift-bold">Lift</span> and a number of other 2D and 3D benchmarks have also been implemented. 
+                      Current work also involves developing and formalising stencil optimisations for 3D codes, 
+                      in particular 2.5D tiling, as well as ground penetrating radar algorithms.
+                      How to best abstract 
+                      out absorbing boundary conditions needs to be investigated in more detail and primitives to 
+                      accommodate these conditions need to be designed and added. Finally, a stencil-based DSL needs to 
+                      be extended to compile into the <span class="lift-bold">Lift</span> language.</p>
+                  <!--<a href="YOUR_PROJECT_PAGE.html" class="button button-style1">Read More</a>-->
+              </section>
+              <section class="4u">
+                  <span class="pennant"><a href="YOUR_PROJECT_PAGE.html"><span class="fa fa-random"></span></a></span>
+                  <h3>Stencil Computations</h3>
+                  <p>Stencil computations are used in a wide range of
+                      applications from physical simulations to machine learning.
+                      Optimizing and tuning them for parallel
+                      hardware remains challenging.
+                      <span class="lift-bold">Lift</span> is a new approach to achieving performance
+                      portability based on a small set of reusable
+                      parallel primitives. Its key novelty is encoding of
+                      optimization as a system of rewrite rules which are
+                      used to explore the optimization space.
+                      We extend <span class="lift-bold">Lift</span> with support for stencil computations
+                      by adding a small number of primitives together
+                      with a few rewrite rules to achieve performance
+                      portability for stencil computations.</p>
+                  <!--<a href="YOUR_PROJECT_PAGE.html" class="button button-style1">Read More</a>-->
               </section>
           </div>
           <!--
