@@ -14,43 +14,40 @@ layout: project_page
                     <header>
                         <h2>Abstract</h2>
                     </header>
-                    <p>Parallel accelerators such as GPUs are notoriously hard to
-                        program; exploiting their full performance potential is a job
-                        best left for ninja programmers. High-level programming languages
-                        coupled with optimizing compilers have been proposed
-                        to attempt to address this issue. However, they rely on
-                        device-specific heuristics or hard-coded library implementations
-                        to achieve good performance resulting in non-portable
-                        solutions that need to be re-optimized for every new device.</p>
-                    
+                    <p>Graphics Processing Units (GPUs) are used as general purpose
+                        parallel accelerators in a wide range of applications.
+                        They are found in most computing systems, and mobile devices
+                        are no exception. The recent availability of programming
+                        APIs such as OpenCL for mobile GPUs promises to
+                        open up new types of applications on these devices.</p>
                     <p>
-                        Achieving performance portability is the holy grail of
-                        high-performance computing and has so far remained an
-                        open problem even for well studied applications like matrix
-                        multiplication. We argue that what is needed is a way to
-                        describe applications at a high-level without committing to
-                        particular implementations. To this end, we developed 
-                        a functional data-parallel language which
-                        allows applications to be expressed in a device neutral way.
-                        We use a set of well-defined rewrite rules to automatically
-                        transform programs into semantically equivalent device-specific
-                        forms, from which OpenCL code is generated.</p>
+                        However, producing high performance GPU code is extremely
+                        difficult. Subtle differences in device characteristics
+                        can lead to large performance variations when different optimizations
+                        are applied. As we will see, this is especially true
+                        for a mobile GPU such as the ARM Mali GPU which has a
+                        very different architecture than desktop-class GPUs. Code
+                        optimized and tuned for one type of GPUs is unlikely to
+                        achieve the performance potential on another type of GPUs.</p>
                     <p>
-                        We demonstrate how this approach produces
-                        high-performance OpenCL code for GPUs with a well-studied,
-                        well-understood application: matrix multiplication.
-                        Starting from a single high-level program, our compiler automatically
-                        generates highly optimized and specialized implementations.
-                        We group simple rewrite rules into more complex
-                        macro-rules, each describing a well-known optimization
-                        like tiling and register blocking in a composable way. Using
-                        an exploration strategy our compiler automatically generates
-                        50,000 OpenCL kernels, each providing a differently
-                        optimized – but provably correct – implementation of matrix
-                        multiplication. The automatically generated code offers
-                        competitive performance compared to the manually tuned
-                        MAGMA library implementations of matrix multiplication
-                        on Nvidia and even outperforms AMD’s clBLAS library.</p>
+                        Auto-tuners have traditionally been an answer to this performance
+                        portability challenge. For instance, they have been
+                        successful on CPUs for matrix operations, which are used
+                        as building blocks in many high-performance applications.
+                        However, they are much harder to design for different classes
+                        of GPUs, given the wide variety of hardware characteristics.</p>
+                    <p>
+                        We take a different perspective and show how
+                        performance portability for matrix multiplication is achieved
+                        using a compiler approach. This approach is based on a
+                        recently developed generic technique that combines a high-level
+                        programming model with a system of rewrite rules. Programs
+                        are automatically rewritten in successive steps, where
+                        optimizations decision are made. This approach is truly performance
+                        portable, resulting in high-performance code for
+                        very different types of architectures such as desktop and mobile
+                        GPUs. In particular, we achieve a speedup of 1.7x over a
+                        state-of-the-art auto-tuner on the ARM Mali GPU.</p>
                     
                 </section>
                 
@@ -91,6 +88,12 @@ layout: project_page
                     <div class="row">
                         <section>
                             <ul class="style">
+                                <li>
+                                    <p class="posted">Feb 6, 2017 @ the International Symposium on Code Generation and
+                                        Optimization (CGO) 2017 in Austin, USA</p>
+                                    <p><a href="presentations/2017/CGO-2017.pdf">
+                                        LIFT: A Functional Data-Parallel IR for High-Performance GPU Code Generation</a></p>
+                                </li>
                                 <li>
                                     <p class="posted">Oct 4, 2016 @ the International Conference on Compilers, Architectures
                                         and Synthesis for Embedded Systems (CASES) 2016 in Pittsburgh, USA</p>
