@@ -37,6 +37,11 @@
         line-height: 1.75em;
         color: #777;
     }
+    
+    p {
+        font-size: 13pt;
+        text-indent: 2em;
+    }
 
     h1,h2,h3,h4,h5,h6
     {
@@ -175,6 +180,18 @@
             margin-bottom: 0;
         }
 
+        .row {
+            margin-bottom: 85px;
+        }
+        
+        .row:last-child {
+            margin-bottom: 25px;
+        }
+        section header h2
+        {
+            font-size: 2.4em;
+        }
+
     /* Images */
 
         .image
@@ -277,18 +294,24 @@
             color: #434343;
         }		
         
-        ul.style .posted {
+        ul.style .posted
+        {
             padding: 0em;
             margin: 0em;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
             text-transform: uppercase;
             font-size: 8pt;
             color: #A2A2A2;
+            line-height: 1.4em;
         }
         
         ul.style .first {
             padding-top: 0px;
             border-top: none;
+        }
+        
+        li > p {
+            text-indent: 0;
         }
                             
 
@@ -474,6 +497,7 @@
             padding-left: 0;
             border-right: 1px solid;
             border-color: rgba(255,255,255,.1);
+            font-size: 11pt;
         }
             .nav .open > a,
             .nav > li > a:hover,
@@ -540,7 +564,7 @@
         position: relative;
         border-radius: 0 !important;
         border: 0 !important;
-        width: 100%;
+        width: auto;
         padding: 0 !important;
     }
     .dropdown-menu > li {
@@ -646,6 +670,7 @@
     {
         position: relative;
         text-align: center;
+        background: #f2f2f2;
     }
     
 /*********************************************************************************/
@@ -694,7 +719,7 @@
 /*********************************************************************************/
 /* Research directions
 /*********************************************************************************/
-
+/*
     #research
     {
         padding-bottom: 2em;
@@ -717,7 +742,7 @@
     #research .button
     {
         margin-top: 1.5em;
-    }
+    }*/
 
 /*********************************************************************************/
 /* Research directions
@@ -728,7 +753,6 @@
         padding-bottom: 2em;
         background: #f2f2f2;
         position: relative;
-        text-align: center;
     }
 
     #research h3
@@ -742,10 +766,10 @@
         font-size: 4em;
     }
 
-    #research .button
+    /*#research .button
     {
         margin-top: 1.5em;
-    }
+    }*/
 
 /*********************************************************************************/
 /* Team                                                                          */
@@ -805,3 +829,76 @@
             font-weight: 300;
             color: rgba(255,255,255,.6);
         }	
+
+        div .row+.row>* {
+            padding-top: 10px;
+        }
+
+/*********************************************************************************/
+/* Research directions                                                           */
+/*********************************************************************************/
+#content > .row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+#content > .row > .\34u {
+    position: relative;
+    padding-bottom: 55px !important;
+}
+#content > .row > .\34u > .button_wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-right: 50px;
+}
+
+.thumb_frame {
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    display: inline-block;
+}
+.thumb_container {
+    position: relative;
+}
+.thumb_image {
+    display: block;
+    position: relative;
+}
+.thumb_overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;    
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ffffff;
+}
+.thumb_container:hover .thumb_overlay {
+    opacity: 0.9;
+}
+.thumb_text {
+    padding: 15px;
+}
+.thumb_text > p {
+    text-indent: 0;
+    color: #000;
+    font-weight: 500;
+    text-align: left;
+}
+
+.thumb_text > .posted {
+    padding: 0em;
+    margin: 0em;
+    letter-spacing: 0.5px;
+    font-size: 11pt;
+    line-height: 1.4em;
+    color: #777;
+    font-weight: 400;
+}
