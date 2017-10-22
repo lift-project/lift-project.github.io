@@ -598,6 +598,11 @@
         text-align: center;
     }
     
+    #support {
+        padding-bottom: 2em;
+    }
+    
+    
     .homepage #content header h2
     {
     }
