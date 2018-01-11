@@ -8,39 +8,39 @@ title: Home
     Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html>
-<head>
+    <head>
     <title>{{ site.title }}: {{ page.title }}</title>
-    {% include header.html %}
-</head>
-<body class="homepage">
+        {% include header.html %}
+    </head>
+    <body class="homepage">
 
-<!-- Header -->
-<div id="header">
-    {% include menu.html %}
-    <div class="container">
-
-        <!-- Logo -->
-        <div id="logo">
-            <h1><a href="#"><span class="lift-light">Lift</span></a></h1>
-            <span class="tag">Where High-Level Programming Meets Performance Portability</span>
+    <!-- Header -->
+        <div id="header">
+            {% include menu.html %}
+            <div class="container"> 
+                
+                <!-- Logo -->
+                <div id="logo">
+                    <h1><a href="#"><span class="lift-light">Lift</span></a></h1>
+                    <span class="tag">Where High-Level Programming Meets Performance Portability</span>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-<!-- Featured -->
-<div id="featured">
-    <div class="container">
-        <header>
-            <h2>Welcome to Lift</h2>
-        </header>
-        <p><span class="lift-bold">Lift</span> is a novel approach to achieving performance portability on parallel accelerators.
-            <span class="lift-bold">Lift</span> combines a high-level functional data parallel language with a system of rewrite rules which encode algorithmic and hardware-specific optimisation choices.
-            Applications written in <span class="lift-bold">Lift</span> are able to take advantage of GPUs (and in the future other accelerators), transparently from the user.</p>
-        </p>
-    </div>
-</div>
+    <!-- Featured -->
+        <div id="featured">
+            <div class="container">
+                <header>
+                    <h2>Welcome to Lift</h2>
+                </header>
+                <p><span class="lift-bold">Lift</span> is a novel approach to achieving performance portability on parallel accelerators.               
+                    <span class="lift-bold">Lift</span> combines a high-level functional data parallel language with a system of rewrite rules which encode algorithmic and hardware-specific optimisation choices.
+                    Applications written in <span class="lift-bold">Lift</span> are able to take advantage of GPUs (and in the future other accelerators), transparently from the user.</p>                                
+                </p>
+            </div>
+        </div>
 
-<!-- Main -->
+        <!-- Main -->
 <!--
     <div id="example">
       <div id="content" class="container">
@@ -53,13 +53,13 @@ title: Home
         </p>
       </div>
     </div>	
--->
+-->	
 
-<!-- Positions -->
-<div id="positions">
-    <div id="content" class="container">
+    <!-- Positions -->
+    <div id="positions">
+      <div id="content" class="container">
         <header>
-            <h2>Open Positions and Collaborations</h2>
+          <h2>Open Positions and Collaborations</h2>
         </header>
         <p> We are always looking for bright and enthusiastic researchers to join our team.
             We have funding opportunities for PhD studies and visits/internships both at the University of Edinburgh
@@ -68,30 +68,27 @@ title: Home
             Please feel free to contact us if you are interested.
             <!--You can also find below some specific positions currently available:-->
         </p>
-        <!--<ul>
-			<li><b>TITLE</b> position at the University of Edinburgh: <a href="LINK">NAME OF THE PROJECT</a></li>
-        </ul>-->
+      </div>
     </div>
-</div>
 
-<!-- Source Code -->
-<div id="code">
-    <div id="content" class="container">
+    <!-- Source Code -->
+    <div id="code">
+      <div id="content" class="container">
         <header>
-            <h2>Source Code</h2>
+          <h2>Source Code</h2>
         </header>
         <p>
-            The <span class="lift-bold">Lift</span> source code is available at <a href="https://github.com/lift-project/lift"><i class="fa fa-github fa-2x" aria-hidden="true"></i> https://github.com/lift-project/lift</a>.<br>
-            Lift is open source software released under the permissive MIT license.
+        The <span class="lift-bold">Lift</span> source code is available at <a href="https://github.com/lift-project/lift"><i class="fa fa-github fa-2x" aria-hidden="true"></i> https://github.com/lift-project/lift</a>.<br>
+        Lift is open source software released under the permissive MIT license.
         </p>
-    </div>
-</div>
+      </div>
+    </div>	
 
-<!-- Main -->
-<div id="pubs">
-    <div id="content" class="container">
+    <!-- Main -->
+    <div id="pubs">
+      <div id="content" class="container">
         <header>
-            <h2>Publications</h2>
+          <h2>Publications</h2>
         </header>
         <ul class="10u -1u">
 
@@ -101,7 +98,7 @@ High Performance Stencil Code Generation with Lift
         </a><br>
         Bastian Hagedorn, Larisa Stoltzfus, Michel Steuwer, Sergei Gorlatch, Christophe Dubach
         <a href="http://cgo.org/cgo2018/">
-International Symposium on Code Generation and Optimization (CGO) 2018
+International Symposium on Code Generationand Optimization (CGO) 2018
         </a><br>		
         <a href="publications/2018/hagedorn18Stencils.pdf" style="margin-right:1em">
           <span class="fa-stack fa-1x">
@@ -140,33 +137,33 @@ International Symposium on Code Generationand Optimization (CGO) 2017
               </span>
             </span>
           </span>
-                    Paper</a>
-                <a href="presentations/2017/CGO-2017.pdf" style="margin-right: 1em;">
+      Paper</a>
+        <a href="presentations/2017/CGO-2017.pdf" style="margin-right: 1em;">
           <span class="fa-stack fa-1x">
             <i class="fa fa-file fa-stack-2x fa-flip-horizontal"></i>
             <i style="margin-top:5px"
                class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
           </span>
-                    Slides of the talk</a>
-                <a href="https://gitlab.com/michel-steuwer/cgo_2017_artifact" style="margin-right:1em">
+          Slides of the talk</a>
+        <a href="https://gitlab.com/michel-steuwer/cgo_2017_artifact" style="margin-right:1em">
           <span class="fa-stack fa-1x">
             <i class="fa fa-bar-chart fa-stack-1x fa-flip-horizontal" style="left:-.1em;top:-.1em"></i>
             <span class="fa fa-stack-2x">
             <i class="fa fa-search" aria-hidden="true"></i>
             </span>
           </span>
-                    Software Artifact for independent evaluation of the performance results</a>
-            </li>
-
-            <li>
-                <a href="publications/2016/steuwer16beyondAutoTuning.pdf">
-                    Matrix Multiplication Beyond Auto-Tuning: Rewrite-based GPU Code Generation
-                </a><br>
-                Michel Steuwer, Toomas Remmelg, and Christophe Dubach<br>
-                <a href="http://www.esweek.org/cases">
-                    International Conference on Compilers, Architecture and Synthesis for Embedded Systems (CASES) 2016
-                </a><br>
-                <a href="publications/2016/steuwer16beyondAutoTuning.pdf" style="margin-right:1em">
+          Software Artifact for independent evaluation of the performance results</a>
+          </li>	      
+          
+          <li>
+        <a href="publications/2016/steuwer16beyondAutoTuning.pdf">
+Matrix Multiplication Beyond Auto-Tuning: Rewrite-based GPU Code Generation
+        </a><br>
+        Michel Steuwer, Toomas Remmelg, and Christophe Dubach<br>
+        <a href="http://www.esweek.org/cases">
+International Conference on Compilers, Architecture and Synthesis for Embedded Systems (CASES) 2016
+        </a><br>		
+        <a href="publications/2016/steuwer16beyondAutoTuning.pdf" style="margin-right:1em">
           <span class="fa-stack fa-1x">
             <i class="fa fa-file fa-stack-2x fa-flip-horizontal"></i>
             <span class="fa fa-stack-1x" style="color:white;">
@@ -175,15 +172,15 @@ International Symposium on Code Generationand Optimization (CGO) 2017
               </span>
             </span>
           </span>
-                    Paper</a>
-                <a href="presentations/2016/CASES-2016.pdf" style="margin-right: 1em;">
+      Paper</a>
+        <a href="presentations/2016/CASES-2016.pdf" style="margin-right: 1em;">
           <span class="fa-stack fa-1x">
             <i class="fa fa-file fa-stack-2x fa-flip-horizontal"></i>
             <i style="margin-top:5px"
                class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
           </span>
-                    Slides of the talk</a>
-            </li>
+          Slides of the talk</a>
+          </li>
 
             <li>
                 <a href="publications/2016/remmelg16perfport.pdf">
@@ -288,7 +285,7 @@ International Symposium on Code Generationand Optimization (CGO) 2017
                 </a><br>
                 Michel Steuwer<br>
                 PhD Thesis, University of M&uuml;nster<br>
-                <a href="publications/2015/steuwer15phdthesis.pdf" style="margin-right:1em">
+        <a href="publications/2015/steuwer15phdthesis.pdf" style="margin-right:1em">
           <span class="fa-stack fa-1x">
             <i class="fa fa-file fa-stack-2x fa-flip-horizontal"></i>
             <span class="fa fa-stack-1x" style="color:white;">
@@ -297,17 +294,17 @@ International Symposium on Code Generationand Optimization (CGO) 2017
               </span>
             </span>
           </span>
-                    PhD Thesis</a>
-            </li>
-
+          PhD Thesis</a>
+          </li>
+          
         </ul>
     </div>
 </div>
 
-<div id="research">
-    <div id="content" class="container">
+    <div id="research">
+      <div id="content" class="container">
         <header>
-            <h2>Research directions</h2>
+          <h2>Research directions</h2>
         </header>
         <div class="row">
             <section class="4u">
