@@ -275,9 +275,15 @@ layout: project_page
                     </header>
 
                     <div align="center">
-                        <img src="images/stencils/speedups.png" width="600" height="152"><br>
-                        <strong>Figure 3</strong>: Speedups compared to handwritten, manually-tuned reference implementations
+                        <img src="images/stencils/barplot-handwritten.png" width="600" height="152"><br>
+                        <strong>Figure 3</strong>: Performance of the Lift generated code and hand-optimized kernels expressed as Giga-elements updated per second. 
                     </div>
+                    <div align="center">
+                        <img src="images/stencils/barplot-ppcg.png" width="600" height="152"><br>
+                        <strong>Figure 4</strong>: Performance of Lift-generated kernels compared to PPCG-generated kernels. Both approaches auto-tune the kernels
+for up to three hours per benchmark/input/device. Large input sizes did not fit onto the ARM GPU. 
+                    </div>
+
                     <br>
                     <p>
                     The transformation from high-level programs to OpenCL code is performed automatically by applying
@@ -290,8 +296,8 @@ layout: project_page
                     We tune numerical parameters such as tile sizes and explore this search space to find the best
                     performing
                     kernel for each stencil applications.
-                    The results are presented in Figure 3 where the baseline is a
-                    hand-optimized reference implementation from benchmark suites or written by HPC experts.
+                    The results presented in Figure 3 show the performance of Lift generated code with hand-optimized reference implementations.
+                    Figure 4 shows the performance of Lift generated kernels compared to state-of-the-art polyhedral compilation.
                 </section>
                 <section>
                     <header>
@@ -392,7 +398,7 @@ layout: project_page
                             <br>
                             PhD Student
                             <br>
-                            University of Edinburgh
+                            University of M&uuml;nster
                         </section>
                         <section class="6u">
                             <a href="http://homepages.inf.ed.ac.uk/s1147290/index.html" class="image full">
