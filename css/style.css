@@ -191,6 +191,23 @@
         {
             font-size: 2.4em;
         }
+        section header h3
+        {
+            font-size: 1.3em;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        section header .subtitle 
+        {
+
+            padding: 0em;
+            margin: 0em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            font-size: 1em;
+            color: #A2A2A2;
+            line-height: 1.4em;
+        }
 
     /* Images */
 
@@ -263,7 +280,7 @@
                 border-top: 1px solid;
                 border-color: rgba(0,0,0,.1);
                 
-            }		
+            }       
         
             ul.default li:first-child
             {
@@ -271,7 +288,7 @@
                 border-top: none;
             }
     
-            ul.default {			   
+            ul.default {               
             }
         
         ul.style li {
@@ -292,7 +309,7 @@
         
         ul.style a {
             color: #434343;
-        }		
+        }       
         
         ul.style .posted
         {
@@ -416,18 +433,18 @@
 
 #jobtitle
 {
-	color: #FFF;
+    color: #FFF;
 }
 
-	#jobtitle h1
-	{
-		font-weight: 300;
+    #jobtitle h1
+    {
+        font-weight: 300;
       line-height: 1em;
       font-size: 2em;
       color: #FFF;
       letter-spacing: -0.05em;
       margin: 0 0 0.125em 0;
-	}
+    }
 
 
 
@@ -675,7 +692,20 @@
     {
         position: relative;
         text-align: center;
+        background: #ffffff;
+    }
+    
+/*********************************************************************************/
+/* Events                                                                        */
+/*********************************************************************************/
+    
+    #events
+    {
+        position: relative;
+        text-align: left;
         background: #f2f2f2;
+        padding-bottom: 2em;
+        font-size: 13pt;
     }
     
 /*********************************************************************************/
@@ -684,7 +714,7 @@
 
     #positions
     {
-        padding-bottom: 2em;		
+        padding-bottom: 2em;        
     }
     
     #positions h2
@@ -833,7 +863,7 @@
             margin: 0;
             font-weight: 300;
             color: rgba(255,255,255,.6);
-        }	
+        }   
 
         div .row+.row>* {
             padding-top: 10px;

@@ -1,0 +1,184 @@
+---
+title: ISPASS 2018 tutorial
+subtitle: Lift &mdash; performance portable code generation on parallel accelerators
+
+layout: project_page
+---
+<div id="main">
+    <div class="container">
+        <div class="row">
+
+            <!-- Content -->
+            <div id="content" class="8u skel-cell-important">
+                <section>
+                    <header>
+                        <h2>Plan</h2>
+                    </header>
+                    <p>
+                We are bringing <span class="lift-bold">Lift</span> to ISPASS with this tutorial titled <i>"<span class="lift-bold">Lift</span> &mdash; performance portable code generation on parallel accelerators"</i>. We will go through the fundamental components of <span class="lift-bold">Lift</span>: language primitives and their properties, <span class="lift-bold">Lift</span> IR, type system, parallelism exploitation and memory management. We will dive deep into rewrite rules and the arithmetic expression simplifier behind <span class="lift-bold">Lift</span>; we will cover the existing applications of the language along with some practical examples for those interested to try them out.</p>
+                <p>The venue is <i><strong>Syndicate Room 6</strong>, Riddle Hall</i>. The schedule is following:
+                    <ul style="margin-top: 5px">
+                        <li><strong>13:30</strong> &mdash; Lift overview (motivation, principles, applications, performance results)</li>
+                        <li><strong>14:15</strong> &mdash; Language design, IR and code generation</li>
+                        <li style="color: green">15:00 &mdash; <i>Break</i></li>
+                        <li><strong>15:30</strong> &mdash; Rewriting and exploration</li>
+                        <li><strong>16:00</strong> &mdash; View system</li>
+                        <li><strong>16:30</strong> &mdash; QA and practice session</li>
+                        <li><strong>17:00</strong> &mdash; Finish</li>
+                    </ul>
+                </p>
+                </section>
+                <section style="font-size: 13pt">
+                    <header>
+                        <h2>Slides</h2>
+                    </header>
+                    <!-- <div class="row">
+                        <section class="6u">
+                            <div class="thumb_frame">
+                                <a href="posters/2017/MogersPPar2017Poster.png">
+                                    <div class="thumb_container">
+                                        <img class="thumb_image" src="posters/2017/thumbnails/MogersPPar2017Poster_thumb.png"
+                                             width="300" height="212">
+                                        <div class="thumb_overlay">
+                                            <div class="thumb_text">
+                                                <p class="posted">June 14, 2017</p>
+                                                <br>
+                                                <p class="posted">@ the PPar Student Showcase Event</p>
+                                                <br>
+                                                <p>Optimization of neural computations using a functional data-parallel language</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </section>
+                        <section class="6u">
+                            <div class="thumb_frame">
+                                <a href="posters/2016/MogersPParIEE2016Poster.pdf">
+                                    <div class="thumb_container">
+                                        <img class="thumb_image" src="posters/2016/thumbnails/MogersPParIEE2016Poster_thumb.png"
+                                             width="300" height="212">
+                                        <div class="thumb_overlay">
+                                            <div class="thumb_text">
+                                                <p class="posted">November 10, 2016</p>
+                                                <br>
+                                                <p class="posted">@ the PPar Industrial Engagement Event</p>
+                                                <br>
+                                                <p>Optimization of neural computations using a functional data-parallel language</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </section>
+                    </div> -->
+                    The slides will be uploaded after the tutorial. Until then, here is a relevant paper of ours:<br><br>
+                     <a href="publications/2017/steuwer17LiftIR.pdf">
+                    Lift: A Functional Data-Parallel IR for High-Performance GPU Code Generation
+                    </a><br>
+                    Michel Steuwer, Toomas Remmelg, and Christophe Dubach<br>
+                    <a href="http://cgo.org/cgo2017/">
+                    International Symposium on Code Generation and Optimization (CGO) 2017
+                    </a><br>
+                    <p style="height: 10px">&nbsp;</p>
+                    <a href="publications/2017/steuwer17LiftIR.pdf" style="margin-right:1em">
+                      <span class="fa-stack fa-1x">
+                        <i class="fa fa-file fa-stack-2x fa-flip-horizontal"></i>
+                        <span class="fa fa-stack-1x" style="color:white;">
+                          <span style="font-size:12px; margin-top:5px; display:block;">
+                        PDF
+                          </span>
+                        </span>
+                      </span>
+                    Paper</a>
+                <a href="presentations/2017/CGO-2017.pdf" style="margin-right: 1em;">
+                  <span class="fa-stack fa-1x">
+                    <i class="fa fa-file fa-stack-2x fa-flip-horizontal"></i>
+                    <i style="margin-top:5px"
+                       class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
+                  </span>
+                  Slides of the talk</a>
+                  <p style="height: 10px">&nbsp;</p>
+                <a href="https://gitlab.com/michel-steuwer/cgo_2017_artifact" style="margin-right: 1em; ">
+                  <span class="fa-stack fa-1x">
+                    <i class="fa fa-bar-chart fa-stack-1x fa-flip-horizontal" style="left:-.1em;top:-.1em"></i>
+                    <span class="fa fa-stack-2x">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    </span>
+                  </span>
+                  Software Artifact for independent evaluation of the performance results</a></span>
+                </section>
+            </div>
+
+            <!-- Sidebar -->
+            <div id="sidebar" class="4u">
+                <section>
+                    <header>
+                        <h2>Links</h2>
+                    </header>
+                    <div class="row">
+                        <section>
+                            <ul class="style" style="font-size: 13pt; padding-left: 0">
+                                    <p style="margin-top: 1em"><a href="https://gitlab.com/larisa.stoltzfus/lift-tutorial">
+                                        <img src="images/gitlab.png" width="30" height="28">
+                                        <div style="padding-top: 3px; width: 220px; text-align: left">
+                                        Lift how-to: GitLab</div></a>
+                                    </p>
+                                    <p style="margin-top: 1em"><a href="https://github.com/lift-project/lift">
+                                        <img src="images/github.svg" width="30" height="30">
+                                        <div style="padding-top: 3px; width: 220px; text-align: left">
+                                        Lift source: GitHub</div></a>
+                                    </p>
+                            </ul>
+                        </section>
+                    </div>
+                </section>
+                <section class="profile">
+                    <header>
+                        <h2>Organizers</h2>
+                    </header>
+                    <div class="row">
+                        <section class="6u">
+                            <a href="https://bastianhagedorn.github.io/" class="image full">
+                                <img SRC="images/bastian.jpg" alt="Bastian Hagedorn"></a>
+                            Bastian Hagedorn
+                            <br>
+                            PhD Student
+                            <br>
+                            University of M&uuml;nster
+                        </section>
+                        <section class="6u">
+                            <a href="http://homepages.inf.ed.ac.uk/s1147290/index.html" class="image full">
+                                <img src="images/larisa.jpg" alt="Larisa Stoltzfus"></a>
+                            <a href="http://homepages.inf.ed.ac.uk/s1147290/index.html">Larisa Stoltzfus</a>
+                            <br>
+                            PhD Student
+                            <br>
+                            <a href="http://www.ed.ac.uk/informatics/">University of Edinburgh</a>
+                        </section>
+                    </div>
+                    <div class="row">
+                        <section class="6u">
+                            <a href="https://naumsmogers.me/" class="image full">
+                                <img src="images/naums.jpg" alt="Naums Mogers"></a>
+                            <a href="https://naumsmogers.me/">Naums Mogers</a>
+                            <br>
+                            PhD Student
+                            <br>
+                            <a href="http://www.ed.ac.uk/informatics/">University of Edinburgh</a>
+                        </section>
+                        <section class="6u">
+                            <a href="http://homepages.inf.ed.ac.uk/cdubach/" class="image full">
+                                <img src="images/cdubach.png" alt="Christophe Dubach"></a>
+                            <a href="http://homepages.inf.ed.ac.uk/cdubach/">Christophe Dubach</a>
+                            <br>
+                                Reader
+                            <br>
+                            <a href="http://www.ed.ac.uk/informatics/">University of Edinburgh</a>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
