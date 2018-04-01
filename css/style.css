@@ -899,6 +899,10 @@
 .thumb_container {
     position: relative;
 }
+.thumb_container_reverse {
+    position: relative;
+    opacity: 0.9;
+}
 .thumb_image {
     display: block;
     position: relative;
@@ -915,8 +919,23 @@
     transition: .5s ease;
     background-color: #ffffff;
 }
+.thumb_overlay_reverse {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;    
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    transition: .5s ease;
+    background-color: #ffffff;
+}
 .thumb_container:hover .thumb_overlay {
     opacity: 0.9;
+}
+.thumb_container_reverse:hover .thumb_overlay_reverse {
+    opacity: 0;
 }
 .thumb_text {
     padding: 15px;
