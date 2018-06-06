@@ -692,20 +692,7 @@
     {
         position: relative;
         text-align: center;
-        background: #f2f2f2;
-    }
-    
-/*********************************************************************************/
-/* Events                                                                        */
-/*********************************************************************************/
-    
-    #events
-    {
-        position: relative;
-        text-align: left;
-        background: #f2f2f2;
-        padding-bottom: 2em;
-        font-size: 13pt;
+        background: #ffffff;
     }
     
 /*********************************************************************************/
@@ -715,12 +702,27 @@
     #positions
     {
         padding-bottom: 2em;        
+        background: #f2f2f2;
     }
     
     #positions h2
     {
         color:  #ff0000;
-    }    
+    }   
+
+    
+/*********************************************************************************/
+/* Events                                                                        */
+/*********************************************************************************/
+    
+    #events
+    {
+        position: relative;
+        text-align: left;
+        background: #ffffff;
+        padding-bottom: 2em;
+        font-size: 13pt;
+    }
 
 /*********************************************************************************/
 /* Source Code                                                                   */
