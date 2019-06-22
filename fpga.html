@@ -1,0 +1,129 @@
+---
+title: High-Level Synthesis for FPGAs
+subtitle: Generating HDL code for Neural Networks on FPGAs using Lift
+
+layout: project_page
+
+permalink: /fpga
+---
+<div id="main">
+    <div class="container">
+        <div class="row">
+
+            <!-- Content -->
+            <div id="content" class="8u skel-cell-important">
+                <section>
+                    <header>
+                        <h2>Abstract</h2>
+                    </header>
+                    <p>The demand for high-performant and energy-efficient neural network (NN) grows.
+                        Due to their parallelity, GPUs bring a big performance improvement (in comparison to CPUs) for these applications. Nevertheless, they still have a limitation in their fixed architecture.
+                        Field-programmable gate arrays (FPGAs) offer more flexibility and can optimise the architecture design to the specific neural network application in order to archive the best performance.
+                        Furthermore they are highly energy-efficient and are therefore well suited for NNs in embedded systems or large scale server clusters.</p>
+                    <p>However, deploying neural networks on FPGAs (like programming parallel accelerators in general), with focus on high performance, is a complex step!
+                        Due to their flexible architecture, FPGAs allow for so many options for tweaking the performance but in return require a lot of hardware specific expertise and take costly development time to be configured properly.
+                        Furthermore, developers do not want to manually adapt their implementations for various accelerators (e.g. CPU, GPU, FPGA). Instead, performance portability is desirable!</p>
+                    <p><span class="lift-bold">Lift</span> addresses these challenges by offering a high-level functional, data-parallel language, which allows the user to efficiently develop an application independently of the target hardware platform.
+                        Then, rewrite rules in the <span class="lift-bold">Lift</span> compiler open a vast design space of possible implementations for this abstract system specification.
+                        This design space is explored to find a suitable solution, which satisfies the performance and energy requirements.
+                        In order to exploit the parallel structure of NNs, the compiler employs pipelining mechanisms and allocates distributed on-chip memory on the FPGA.
+                        Timing behaviour and scheduling is introduced until finally a Hardware description language (HDL) code is emitted, that can be used to generate the bitstream for the FPGA.</p>
+                </section>
+                <section>
+                    <div class="row">
+                        <header>
+                            <h2>Publications</h2>
+                        </header>
+                        <ul>
+                            <li>
+                                Martin Kristien, Bruno Bodin, Michel Steuwer, Christophe Dubach: 
+                                <strong><a href="publications/2019/kristien2019hlsfunctionalpatterns.pdf">
+                                High-Level Synthesis of Functional Patterns with Lift
+                                        </a></strong>; 
+                                        <a href="https://pldi19.sigplan.org/home/ARRAY-2019#program">
+                                6th ACM SIGPLAN International Workshop on Libraries, Languages, and Compilers for Array Programming
+                                        </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sidebar -->
+            <div id="sidebar" class="4u">
+                <section style="text-align: center">
+                    <header style="text-align: left">
+                        <h2>Posters</h2>
+                    </header>
+                    <div class="thumb_frame" style="margin: 0 auto;">
+                        <a href="posters/2019/SchlaakHiPEAC2019Poster.pdf">
+                            <div class="thumb_container">
+                                <img class="thumb_image" src="posters/2019/thumbnails/SchlaakHiPEAC2019Poster_thumb.png"
+                                     width="216" height="300">
+                                <div class="thumb_overlay">
+                                    <div class="thumb_text">
+                                        <p class="posted">April 16, 2019</p>
+                                        <p class="posted">@ HiPEAC CSW Spring 2019 in Edinburgh, UK</p>
+                                        <p>High-Level Synthesis of Neural Networks for FPGAs</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <!--<section>
+                    <header>
+                        <h2>Talks</h2>
+                    </header>
+                    <div class="row">
+                        <section>
+                            <ul class="style">
+                                <li>
+                                    <p class="posted">January 21st, 2019 @ the EDLA 2019 workshop at HiPEAC</p>
+                                    <p><a href="presentations/2019/EDLA-2019.pdf">
+                                        Towards Mapping Lift to Deep Neural Network Accelerators</a></p>
+                                </li>
+                                <li>
+                                    <p class="posted">June 14th, 2017 @ the PPar Student Showcase Event</p>
+                                    <p><a href="presentations/2017/MogersPPar2017.pdf">
+                                        Optimization of neural computations using a functional data-parallel language</a></p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </section>-->
+                <section class="profile">
+                    <header>
+                        <h2>Researchers</h2>
+                    </header>
+                    <div class="row">
+                        <section class="6u">
+                            <a href="http://homepages.inf.ed.ac.uk/s1210443/" class="image full"><img src="images/andrej.jpg" alt=""></a>
+                            <a href="http://homepages.inf.ed.ac.uk/s1210443/">Andrej Ivanis</a>
+                            <br>PhD Student<br><a href="http://www.ed.ac.uk/informatics/">University of Edinburgh</a>
+                        </section>
+                        <section class="6u">
+                            <a href="http://homepages.inf.ed.ac.uk/s1894023/" class="image full"><img src="images/christof.jpg" alt=""></a>
+                            <a href="http://homepages.inf.ed.ac.uk/s1894023/">Christof Schlaak</a>
+                            <br>PhD Student<br><a href="http://www.ed.ac.uk/informatics/">University of Edinburgh</a>
+                        </section>
+                    </div>
+                    <div class="row">
+                        <section class="6u">
+                            <a href="http://homepages.inf.ed.ac.uk/s1343145/" class="image full"><img src="images/martin.jpg" alt=""></a>
+                            <a href="http://homepages.inf.ed.ac.uk/s1343145/">Martin Kristien</a>
+                            <br>PhD Student<br><a href="http://www.ed.ac.uk/informatics/">University of Edinburgh</a>
+                        </section>
+                        <section class="6u">
+                            <a href="http://homepages.inf.ed.ac.uk/cdubach/" class="image full">
+                                <img src="images/cdubach.png" alt="Christophe Dubach"></a>
+                            <a href="http://homepages.inf.ed.ac.uk/cdubach/">Christophe Dubach</a>
+                            <br>Reader<br><a href="http://www.ed.ac.uk/informatics/">University of Edinburgh</a>
+                        </section>
+                    </div>
+                </section>                
+            </div>
+
+        </div>
+    </div>
+</div>
