@@ -16,18 +16,10 @@ permalink: /fpga
                     <header>
                         <h2>Abstract</h2>
                     </header>
-                    <p>The demand for high-performant and energy-efficient neural network (NN) grows.
-                        Due to their parallelity, GPUs bring a big performance improvement (in comparison to CPUs) for these applications. Nevertheless, they still have a limitation in their fixed architecture.
-                        Field-programmable gate arrays (FPGAs) offer more flexibility and can optimise the architecture design to the specific neural network application in order to archive the best performance.
-                        Furthermore they are highly energy-efficient and are therefore well suited for NNs in embedded systems or large scale server clusters.</p>
-                    <p>However, deploying neural networks on FPGAs (like programming parallel accelerators in general), with focus on high performance, is a complex step!
-                        Due to their flexible architecture, FPGAs allow for so many options for tweaking the performance but in return require a lot of hardware specific expertise and take costly development time to be configured properly.
-                        Furthermore, developers do not want to manually adapt their implementations for various accelerators (e.g. CPU, GPU, FPGA). Instead, performance portability is desirable!</p>
-                    <p><span class="lift-bold">Lift</span> addresses these challenges by offering a high-level functional, data-parallel language, which allows the user to efficiently develop an application independently of the target hardware platform.
-                        Then, rewrite rules in the <span class="lift-bold">Lift</span> compiler open a vast design space of possible implementations for this abstract system specification.
-                        This design space is explored to find a suitable solution, which satisfies the performance and energy requirements.
-                        In order to exploit the parallel structure of NNs, the compiler employs pipelining mechanisms and allocates distributed on-chip memory on the FPGA.
-                        Timing behaviour and scheduling is introduced until finally a Hardware description language (HDL) code is emitted, that can be used to generate the bitstream for the FPGA.</p>
+                    <p>Many modern applications that perform classification, prediction or clustering employ Neural Networks (NN) for these tasks. They are often used in datacenters or mobile devices, where high performance and energy-efficiency is crucial. Due to their parallelity, GPUs bring a big performance improvement (in comparison to CPUs) for these applications. Nevertheless, they still have a limitation in their fixed architecture. Especially, because the field is changing quickly and fast innovation must be made possible.</p>
+                    <p>Field-Programmable Gate Arrays (FPGAs) offer more flexibility and can specialise the architecture design to the specific neural network application in order to archive the best performance. Furthermore they are highly energy-efficient and are therefore well suited for NNs in embedded systems or large scale server clusters.</p>
+                    <p>However, deploying neural networks on FPGAs (like programming parallel accelerators in general), with focus on high performance, is a complex step. Due to their flexible architecture, FPGAs allow for so many options for tweaking the performance but in return require a lot of hardware specific expertise and take costly development time to be configured properly. Rather than manual development, automation should take place here to accelerate the development process and also drive down costs. Furthermore, developers do not want to manually adapt their implementations for various accelerators (e.g. CPU, GPU, FPGA). Instead, performance portability is desirable.</p>
+                    <p><span class="lift-bold">Lift</span> addresses these challenges by offering a high-level functional, data-parallel language, which allows the user to efficiently develop an application independently of the target hardware platform. Then, rewrite rules in the <span class="lift-bold">Lift</span> compiler open a vast design space of possible implementations for this abstract system specification. This design space is explored to find a suitable solution, which satisfies the performance and energy requirements. In order to exploit the parallel structure of NNs, the compiler employs pipelining mechanisms and allocates distributed on-chip memory on the FPGA. Timing behaviour and scheduling is introduced until finally a Hardware description language (HDL) code is emitted, that can be used to generate the bitstream for the FPGA.</p>
                 </section>
                 <section>
                     <div class="row">
@@ -41,7 +33,7 @@ permalink: /fpga
                                 High-Level Synthesis of Functional Patterns with Lift
                                         </a></strong>; 
                                         <a href="https://pldi19.sigplan.org/home/ARRAY-2019#program">
-                                6th ACM SIGPLAN International Workshop on Libraries, Languages, and Compilers for Array Programming
+                                6th ACM SIGPLAN International Workshop on Libraries, Languages, and Compilers for Array Programming (ARRAY) 2019
                                         </a>
                             </li>
                         </ul>
